@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    color: white;
+    background: #d7e4ff;
+    font-family: "montserrat";
+}
+
+.container-fluid{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    position: relative;
+    margin: 100px;
+    background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(./bg-007-desktop.jpg);
+    background-size: cover;
+    background-position-y: -100px;
+    border-radius: 5px;
+}
+
+
+.img{
+    border-radius: 200px;
+    border: 6px solid #fff;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background-image: url(./image3.png);
+    background-size: cover;
+    background-position-y: -40px;
+    bottom: 320px;
+}
+
+hh{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;}
+
+p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.socials{
+    display: flex;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.socials img{
+    width: 30px;
+    height: 30px;
+}
+
+.s{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.nav{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 320px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.n{
+    width: 200px;
+    height: 200px;
+    background: #000000;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.s:hover{
+    transform: scale(0.95);
+    background-color: #b8ebff;
+}
+
+.n:hover{
+    background-color: #b8ebff;  
+    transform: scale(1.05);
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 200px;
+    padding:10px 0;
+    color: black;
+}
+
+@media (max-width:768px) {
+
+body{
+    min-height: 70vh;
+    background-color: none;
+    background-image: url(./bg-03b.png);
+}
+
+.container-fluid{
+    padding: 0 30px;
+    background-position: center;
+    margin: 100px 20px 0 20px;
+}
+p{
+    font-size: 14px;
+}
+br{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    top: 380px;
+    gap: 15px;
+}
+
+.n{
+    height: 50px;
+    width: 300px;
+}
+
+footer{
+    margin-top: 300px;
+}
+    
+}
